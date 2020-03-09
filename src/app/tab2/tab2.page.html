@@ -7,11 +7,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- *ngIf="show" -->
+  <div class="main" >
+    <div [ngClass]="{'show': showDiv,'hide': hideDiv}" class="muultiChat">
+      <div class="innnerDiv" *ngFor="let image of [1,2,3,4,5,6,7,8,9,10,11,12]">
+        <img src="assets/images/{{image}}.jpg">
+      </div>
+    </div>
+  </div>
 </ion-content>

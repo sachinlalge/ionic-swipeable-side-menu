@@ -13,5 +13,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card  class="logodiv">
+    <ion-img #logo src="assets/images/2.jpg"></ion-img>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-avatar>
+          <ion-img src="assets/images/2.jpg"></ion-img>
+        </ion-avatar>
+        <ion-text>SAC_LAL</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <div class="logodiv" style="display: flex; overflow:scroll;">
+    <img #logo *ngFor="let image of [1,2,3,4,5,6,7,8,9,10,11,12]" src="assets/images/{{image}}.jpg">
+  </div> -->
 </ion-content>

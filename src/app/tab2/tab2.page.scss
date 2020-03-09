@@ -1,3 +1,46 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+.touch {
+  height: 400px;
+  width: 300px;
+  background: black;
+}
+.muultiChat {
+  background: #cbe2ee;
+  padding: 10px;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  right: -100px;
+  top: 0px;
+  overflow: scroll;
+  // transition: 500ms ease;
+  img {
+    padding-bottom: 8px;
+  }
+}
+
+.show {
+  animation: animate .4s forwards ease-in-out;
+} 
+.hide {
+  animation: animate1 .4s forwards ease-in-out;
+}
+@keyframes animate {
+  0% {
+    right: -100;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes animate1 {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100;
+  }
+}
